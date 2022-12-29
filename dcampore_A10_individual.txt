@@ -1,0 +1,32 @@
+Dan Camporeale
+Group 7
+HW 10 
+
+1.
+
+CREATE TABLE Singer
+(SingerID int(11) UNIQUE,
+FirstName varchar(30),
+LastName varchar(30),
+Label varchar(30),
+Salary int(11),
+Style varchar(30));
+
+2.
+
+CREATE TABLE Tour
+(TourID int(11) UNIQUE,
+TourName varchar(30),
+Begin date,
+End date,
+Headliner int(11));
+
+3.
+
+INSERT INTO Singer(SingerID, FirstName, LastName, Label, Salary, Style)
+VALUES(001, Dan, Camporeale, Sony, 1000000, Country);
+
+4.
+
+SELECT FirstName, LastName FROM Singer;
+WHERE Label = 'Sony' AND Salary > 25000;
